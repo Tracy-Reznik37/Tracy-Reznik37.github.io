@@ -1,1 +1,67 @@
-2
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>details和summary</title>
+<link rel="stylesheet" href="css/details.css">
+<style>
+body > div {  margin-bottom: 2em; }
+</style>
+</head>
+
+<body>
+<h1>details和summary</h1>
+<p>details的open属性在用户与details元素交互时自动添加和删除，可用于根据details状态设置其及后代元素的不同样式。</p>
+
+<div>
+  <!-- 1-1 将20~25行代码使用details标签包裹 -->
+
+    <!-- 1-2完 将下面一行文本用summary标签包裹 -->
+    <details>
+    <summary>奶茶配料表</summary>
+    <div>
+      <p>白砂糖，植脂末，全脂奶粉，速溶红茶粉，食品添加剂(二氧化硅，食用香精)</p>
+      <p>还有更多你不知道的秘方，敢喝吗？</p>
+    </div></details>
+
+  <details>
+    <summary>有效日期</summary>
+      <p>2038年7月1日</p>
+  </details>
+</div>
+<!-- 2-1 将上面div元素复制粘贴到下面，将该div的class属性设置为details-style1。 -->
+<div class="details-style1">
+  <div>
+  
+      <details>
+      <summary>奶茶配料表</summary>
+      <div>
+        <p>白砂糖，植脂末，全脂奶粉，速溶红茶粉，食品添加剂(二氧化硅，食用香精)</p>
+        <p>还有更多你不知道的秘方，敢喝吗？</p>
+      </div></details>
+
+      <details>
+        <summary>有效日期</summary>
+          <p>2038年7月1日</p>
+      </details>
+    </div>
+
+<!-- 2-2完 将上面div元素复制粘贴到下面，将该div的class属性设置为details-style2。给两个details均添加name属性，值均为other -->
+<div class="details-style2">
+
+    <details name="other">
+      <summary>奶茶配料表</summary>
+      <div>
+        <p>白砂糖，植脂末，全脂奶粉，速溶红茶粉，食品添加剂(二氧化硅，食用香精)</p>
+        <p>还有更多你不知道的秘方，敢喝吗？</p>
+      </div></details>
+  
+    <details name="other">
+      <summary>有效日期</summary>
+        <p>2038年7月1日</p>
+    </details>
+  </div>
+
+</body>
+</html>
